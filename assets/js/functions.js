@@ -715,7 +715,7 @@ $("#contactform").on("submit", function(e) {
 
   else {
     $.ajax({
-      url:"https://script.google.com/macros/s/AKfycbz-jryYdo5yzfxK6WF2HcJ8QUvNDfHCSJok5JNk60CXqs-vcJ2rfaOr2o4cu6idIAyQIg/exec",
+      url:"https://script.google.com/macros/s/AKfycbyKgLPKqmyN9_oL8uCYRvT2wlulGjZyy-l5Q_t8keFY/dev",
       data:$(this).serialize(),
       type:"POST",
       success:function(data){
