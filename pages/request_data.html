@@ -67,7 +67,7 @@
 					<div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 text-center">
 						<!-- Contact Form -->
 						<div class="contact-form">
-							<form method="POST" id="contactform" action="https://script.google.com/macros/s/AKfycbwj2to-f209j6kz6VVV40oP-EJg_KK7xcfMWG6R4GZ5prCQeWdHE0aZrsCl0fc68vIAQQ/exec">
+							<form method="POST" id="contactform" action="https://script.google.com/macros/s/AKfycbyZD4Bbc2qhItPsZG-twnR7noayuWvHAlfnWvVcAuwtjxdJJp7CmBJ9NgzzP3vtoDI4MQ/exec">
 								<div class="row gx-3 gy-0">
 									<div class="col-12 col-sm-6">
 										<input type="text" id="name" name="first_name" placeholder="Name" required>
@@ -88,7 +88,7 @@
 								<div id="input_fields_wrap">
 									<div class="input_fields_line row gx-3 gy-0">
 										<div class="input_hospital">
-									  		<input type="text" id="hospital" name="hospital_name[1]" placeholder="Hospital Name">
+									  		<input type="text" id="hospital" name="hospital_name_unparsed[1]" placeholder="Hospital Name">
 										</div>
 									<!-- <br> -->
 									</div>
@@ -157,7 +157,7 @@
 				if(x < max_fields){ //max input box allowed
 					// wrapper.className = "col-12 col-sm-6";
 					x++; //text box increment
-					$(wrapper).append('<div class="input_fields_line row gx-3 gy-0"><div class="input_hospital col-12 col-sm-10"><input type="text" name="hospital_name[' + x + ']" placeholder="Hospital Name"/></div> <div class="remove_field col-12 col-sm-2"><a href="#">Remove</a></div></div>'); // add input boxes.
+					$(wrapper).append('<div class="input_fields_line row gx-3 gy-0"><div class="input_hospital col-12 col-sm-10"><input type="text" name="hospital_name_unparsed[' + x + ']" placeholder="Hospital Name"/></div> <div class="remove_field col-12 col-sm-2"><a href="#">Remove</a></div></div>'); // add input boxes.
 				}
 			});
 			
