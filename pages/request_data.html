@@ -67,28 +67,37 @@
 					<div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 text-center">
 						<!-- Contact Form -->
 						<div class="contact-form">
-							<form method="POST" id="contactform" action="https://script.google.com/macros/s/AKfycbzstFLAgTGNbHnCkZMSfU6khLuICuIXRqrXs9gT7NXf74VQwgFgwi-ruOZZXhG1qIWa/exec">
+							<form method="POST" id="contactform"
+								action="https://script.google.com/macros/s/AKfycbzstFLAgTGNbHnCkZMSfU6khLuICuIXRqrXs9gT7NXf74VQwgFgwi-ruOZZXhG1qIWa/exec">
 								<div class="row gx-3 gy-0">
 									<div class="col-12 col-sm-6">
-										<input type="text" id="name" name="first_name" placeholder="Name" required>
+							
+										<label for="name">Name</label>
+							
+										<input type="text" id="name" name="first_name" required>
 									</div>
+							
 									<div class="col-12 col-sm-6">
-										<input type="text" id="surname" name="surname" placeholder="Surname" required>
+										<label for="surname">Surname</label>
+										<input type="text" id="surname" name="surname" required>
 									</div>
 								</div>
 
 								<div class="row gx-3 gy-0">
 									<div class="col-12 col-sm-6">
-										<input type="email" id="email" name="email" placeholder="E-Mail" required>
+										<label for="email">Email</label>
+										<input type="email" id="email" name="email" required>
 									</div>
 									<div class="col-12 col-sm-6">
-										<!-- <input type="date" id="dob" name="dob" placeholder="Date of Birth" required> -->
-										<input type="text" class="form-control" placeholder="Date of Birth" onfocus="(this.type='date')" required/> 
+										<label for="dob">Date of Birth</label><input type="date" id="dob" name="dob" required>
+										<!-- <input type="text" class="form-control" id="dob" name="dob" placeholder="Date of Birth" onclick="(this.type='date')" required> -->
+										<!-- <input type="text" class="form-control" placeholder="Date of Birth" onfocus="(this.type='date')" required/>  -->
 									</div>
 								</div>
 								<div id="input_fields_wrap">
 									<div class="input_fields_line row gx-3 gy-0">
 										<div class="input_hospital">
+											<label for="hospital">Hospitals and GP practices</label>
 									  		<input type="text" id="hospital" name="hospital_name_unparsed[1]" placeholder="Hospital/GP Name">
 										</div>
 									<!-- <br> -->
@@ -158,7 +167,7 @@
 				if(x < max_fields){ //max input box allowed
 					// wrapper.className = "col-12 col-sm-6";
 					x++; //text box increment
-					$(wrapper).append('<div class="input_fields_line row gx-3 gy-0"><div class="input_hospital col-12 col-sm-10"><input type="text" name="hospital_name_unparsed[' + x + ']" placeholder="Hospital Name"/></div> <div class="remove_field col-12 col-sm-2"><a href="#">Remove</a></div></div>'); // add input boxes.
+					$(wrapper).append('<div class="input_fields_line row gx-3 gy-0"><div class="input_hospital col-12 col-sm-10"><input type="text" name="hospital_name_unparsed[' + x + ']" placeholder="Hospital/GP Name"/></div> <div class="remove_field col-12 col-sm-2"><a href="#">Remove</a></div></div>'); // add input boxes.
 				}
 			});
 			
