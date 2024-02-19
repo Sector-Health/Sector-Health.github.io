@@ -1,136 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="">
-        <meta name="keywords" content="">
-		<title>Sector Health - Request hospital data</title>
-		<!-- Favicon -->
-        <link href="" rel="shortcut icon">
-		<!-- CSS -->
-		<link href="../assets/plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
-		<!-- <link href="../assets/plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet"> -->
-		<!-- <link href="../assets/plugins/owl-carousel/owl.theme.default.min.css" rel="stylesheet"> -->
-		<!-- <link href="../assets/plugins/magnific-popup/magnific-popup.min.css" rel="stylesheet"> -->
-		<link href="../assets/plugins/sal/sal.min.css" rel="stylesheet">
-		<!-- <link href="../assets/plugins/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
-		<link href="../assets/css/theme.css" rel="stylesheet">
-		<link href="../assets/css/theme-colors/theme-color-blue.css" rel="stylesheet">
-		<!-- Fonts/Icons -->
-		<link href="../assets/plugins/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-		<link href="../assets/plugins/font-awesome/css/all.css" rel="stylesheet">
-	</head>
 
-	<body class="d-flex flex-column min-vh-100 theme-color-blue preloader-theme" data-preloader="1">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<title>Sector Health - Request hospital data</title>
+	<!-- Favicon -->
+	<link href="" rel="shortcut icon">
+	<!-- CSS -->
+	<link href="../assets/plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+	<!-- <link href="../assets/plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet"> -->
+	<!-- <link href="../assets/plugins/owl-carousel/owl.theme.default.min.css" rel="stylesheet"> -->
+	<!-- <link href="../assets/plugins/magnific-popup/magnific-popup.min.css" rel="stylesheet"> -->
+	<link href="../assets/plugins/sal/sal.min.css" rel="stylesheet">
+	<!-- <link href="../assets/plugins/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
+	<link href="../assets/css/theme.css" rel="stylesheet">
+	<link href="../assets/css/theme-colors/theme-color-blue.css" rel="stylesheet">
+	<!-- Fonts/Icons -->
+	<link href="../assets/plugins/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="../assets/plugins/font-awesome/css/all.css" rel="stylesheet">
+</head>
 
-		<!-- Header -->
-		<div class="header transparent-light">
-			<div class="container">
-				<!-- Logo -->
-				<div class="header-logo">
-					<h3><a href="../index.html">Sector Health</a></h3>
-					<!-- 
+<body class="d-flex flex-column min-vh-100 theme-color-blue preloader-theme" data-preloader="1">
+
+	<!-- Header -->
+	<div class="header transparent-light">
+		<div class="container">
+			<!-- Logo -->
+			<div class="header-logo">
+				<h3><a href="../index.html">Sector Health</a></h3>
+				<!-- 
 					<img class="logo-dark" src="../assets/images/your-logo-dark.png" alt="">
 					<img class="logo-light" src="../assets/images/your-logo-light.png" alt=""> 
 					-->
-				</div>
+			</div>
 
-			</div><!-- end container -->
-		</div>
-		<!-- end Header -->
+		</div><!-- end container -->
+	</div>
+	<!-- end Header -->
 
-		<!-- Hero section -->
-		<div class="section bg-image parallax" data-bg-src="../assets/images/bg1.jpg">
-			<div class="bg-color-theme-03 section-divider-curve-bottom">
-				<div class="container text-center">
-						<div class="col-12 col-lg-7 offset-md-1 col-lg-8 offset-lg-2">
-							<h1 class="fw-normal">Request your health data</h1>
-						</div>
-					</div><!-- end row -->
-				</div><!-- end container -->
-			</div><!-- end bg-dark-* -->
-		</div>
-		<!-- end Hero section -->		
-
-		<div class="section">
-			<div class="container">
-				<div class="mb-5">
-					<div class="row text-center">
-						<div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-							<h2 class="fw-light">Fill in your details and we'll help you collect your information.</h2>
-							<!-- <p>Fill in your details and we'll help you collect your information.</p> -->
-						</div>
-					</div>
-				</div>
-				<div class="row g-4">
-					<div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 text-center">
-						<!-- Contact Form -->
-						<div class="contact-form">
-							<form method="POST" id="contactform"
-								action="https://script.google.com/macros/s/AKfycbzstFLAgTGNbHnCkZMSfU6khLuICuIXRqrXs9gT7NXf74VQwgFgwi-ruOZZXhG1qIWa/exec">
-								<div class="row gx-3 gy-0">
-									<div class="col-12 col-sm-6">
-							
-										<label for="name">Name</label>
-							
-										<input type="text" id="name" name="first_name" required>
-									</div>
-							
-									<div class="col-12 col-sm-6">
-										<label for="surname">Surname</label>
-										<input type="text" id="surname" name="surname" required>
-									</div>
-								</div>
-
-								<div class="row gx-3 gy-0">
-									<div class="col-12 col-sm-6">
-										<label for="email">Email</label>
-										<input type="email" id="email" name="email" required>
-									</div>
-									<div class="col-12 col-sm-6">
-										<label for="dob">Date of Birth</label><input type="date" id="dob" name="dob" required>
-										<!-- <input type="text" class="form-control" id="dob" name="dob" placeholder="Date of Birth" onclick="(this.type='date')" required> -->
-										<!-- <input type="text" class="form-control" placeholder="Date of Birth" onfocus="(this.type='date')" required/>  -->
-									</div>
-								</div>
-								<div id="input_fields_wrap">
-									<div class="input_fields_line row gx-3 gy-0">
-										<div class="input_hospital">
-											<label for="hospital">Hospitals and GP practices</label>
-									  		<input type="text" id="hospital" name="hospital_name_unparsed[1]" placeholder="Hospital/GP Name">
-										</div>
-									<!-- <br> -->
-									</div>
-								</div>
-							
-								<button class="add_field_button button button-gray button-md button-radius">Add Hospital</button>
-
-								<br>
-								<br>
-
-								<div id="contact_box" class="row gx-3 gy-0">
-									<div class="col-12 col-sm-2">										
-										<input type="checkbox" id="contact_ok" name="contact_ok" value="TRUE">
-									</div>
-									<div class="col-12 col-md-10 text-md-start">										
-										<label for="contact_ok">Ok&nbsp;to&nbsp;be&nbsp;contacted</label>						
-									</div>
-								</div>
-							</div>
-							
-							<br>
-							<button id="sendButton" class="button button-outline-dark button-md button-radius" type="submit">Send</button>
-						</form>
-							<!-- Submit result -->
-						<div class="submit-result">
-							<span id="success">Thank you! Your request has been sent.</span>
-							<span id="error">Something went wrong. Please contact support@accessrequest.health .</span>
-						</div>
-					</div><!-- end contact-form -->
+	<!-- Hero section -->
+	<div class="section bg-image parallax" data-bg-src="../assets/images/bg1.jpg">
+		<div class="bg-color-theme-03 section-divider-curve-bottom">
+			<div class="container text-center">
+				<div class="col-12 col-lg-7 offset-md-1 col-lg-8 offset-lg-2">
+					<h1 class="fw-normal">Request your health data</h1>
 				</div>
 			</div><!-- end row -->
 		</div><!-- end container -->
+	</div><!-- end bg-dark-* -->
+	</div>
+	<!-- end Hero section -->
+
+	<div class="section">
+		<div class="container">
+			<div class="mb-5">
+				<div class="row text-center">
+					<div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+						<h2 class="fw-light">Fill in your details and we'll help you collect your information.</h2>
+						<!-- <p>Fill in your details and we'll help you collect your information.</p> -->
+					</div>
+				</div>
+			</div>
+			<div class="row g-4">
+				<div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-xs-10 offset-xs-1 text-center">
+					<!-- Contact Form -->
+					<div class="contact-form">
+						<form method="POST" id="contactform"
+							action="https://script.google.com/macros/s/AKfycbzstFLAgTGNbHnCkZMSfU6khLuICuIXRqrXs9gT7NXf74VQwgFgwi-ruOZZXhG1qIWa/exec">
+							<div class="row gx-3 gy-0">
+								<div class="col-12 col-sm-6">
+
+									<label for="name">Name</label>
+
+									<input type="text" id="name" name="first_name" required>
+								</div>
+
+								<div class="col-12 col-sm-6">
+									<label for="surname">Surname</label>
+									<input type="text" id="surname" name="surname" required>
+								</div>
+							</div>
+
+							<div class="row gx-3 gy-0">
+								<div class="col-12 col-sm-6">
+									<label for="email">Email</label>
+									<input type="email" id="email" name="email" required>
+								</div>
+								<div class="col-12 col-sm-6">
+									<label for="dob">Date of Birth</label><input type="date" id="dob" name="dob"
+										required>
+									<!-- <input type="text" class="form-control" id="dob" name="dob" placeholder="Date of Birth" onclick="(this.type='date')" required> -->
+									<!-- <input type="text" class="form-control" placeholder="Date of Birth" onfocus="(this.type='date')" required/>  -->
+								</div>
+							</div>
+							<div id="input_fields_wrap">
+								<div class="input_fields_line row gx-3 gy-0">
+									<div class="input_hospital">
+										<label for="hospital">Hospitals and GP practices</label>
+										<input type="text" id="hospital" name="hospital_name_unparsed[1]"
+											placeholder="Hospital/GP Name">
+									</div>
+									<!-- <br> -->
+								</div>
+							</div>
+
+							<button class="add_field_button button button-gray button-md button-radius">Add
+								Hospital</button>
+
+							<br>
+							<br>
+
+							<div id="contact_box" class="row gx-3 gy-0">
+								<div class="col-12 col-sm-1 col-xs-2">
+									<input type="checkbox" id="contact_ok" name="contact_ok" value="TRUE">
+								</div>
+								<div class="col-12 col-sm-11 col-xs-10 text-md-start">
+									<label for="contact_ok">I am happy to be contacted by Sector Health to provide
+										feedback about my experience requesting my health data.</label>
+								</div>
+							</div>
+					</div>
+
+					<br>
+					<button id="sendButton" class="button button-outline-dark button-md button-radius"
+						type="submit">Send</button>
+					</form>
+					<!-- Submit result -->
+					<div class="submit-result">
+						<span id="success">Thank you! Your request has been sent.</span>
+						<span id="error">Something went wrong. Please contact support@accessrequest.health .</span>
+					</div>
+				</div><!-- end contact-form -->
+			</div>
+		</div><!-- end row -->
+	</div><!-- end container -->
 	</div>
 
 	<footer class="mt-auto">
@@ -138,44 +144,44 @@
 			<div class="container text-center">
 				<!-- <div class="row g-4 align-items-center">
 					<div class="col-12 col-md-4 order-md-2 text-center"> -->
-						<p>copyright &copy; 2024 sector health ltd - all rights reserved</p>
-					<!-- </div> -->
-					<!-- <div class="col-12 col-md-4 order-md-2 text-center"> -->
-						<p>The Projects, 8-9 Ship Street, Brighton, BN1 1AD, United Kingdom</p>
-					<!-- </div> -->
+				<p>copyright &copy; 2024 sector health ltd - all rights reserved</p>
+				<!-- </div> -->
+				<!-- <div class="col-12 col-md-4 order-md-2 text-center"> -->
+				<p>The Projects, 8-9 Ship Street, Brighton, BN1 1AD, United Kingdom</p>
+				<!-- </div> -->
 				<!-- </div>end row -->
 			</div><!-- end container -->
 		</div>
 	</footer>
 
-		<!-- ***** JAVASCRIPTS ***** -->
-		<script src="../assets/plugins/jquery.min.js"></script>
-		<!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script> -->
-		<script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
-		<script src="../assets/plugins/plugins.js"></script>
-		<script src="../assets/js/functions.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-		<script>
-		  $(document).ready(function() {
-			var max_fields      = 10; //maximum input boxes allowed
-			var wrapper         = $("#input_fields_wrap"); //Fields wrapper
-			var add_button      = $(".add_field_button"); //Add button ID
-			
+	<!-- ***** JAVASCRIPTS ***** -->
+	<script src="../assets/plugins/jquery.min.js"></script>
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script> -->
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
+	<script src="../assets/plugins/plugins.js"></script>
+	<script src="../assets/js/functions.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			var max_fields = 10; //maximum input boxes allowed
+			var wrapper = $("#input_fields_wrap"); //Fields wrapper
+			var add_button = $(".add_field_button"); //Add button ID
+
 			var x = 1; //initial text box count
-			$(add_button).click(function(e){ //on add input button click
+			$(add_button).click(function (e) { //on add input button click
 				e.preventDefault();
-				if(x < max_fields){ //max input box allowed
+				if (x < max_fields) { //max input box allowed
 					// wrapper.className = "col-12 col-sm-6";
 					x++; //text box increment
 					$(wrapper).append('<div class="input_fields_line row gx-3 gy-0"><div class="input_hospital col-12 col-sm-10"><input type="text" name="hospital_name_unparsed[' + x + ']" placeholder="Hospital/GP Name"/></div> <div class="remove_field col-12 col-sm-2"><a href="#">Remove</a></div></div>'); // add input boxes.
 				}
 			});
-			
-			$(wrapper).on("click",".remove_field", function(e){ //user click on remove text
-				e.preventDefault(); $(this).parent('div').remove(); x--;
-				})
-			});
-		</script>
-	</body>
-</html>
 
+			$(wrapper).on("click", ".remove_field", function (e) { //user click on remove text
+				e.preventDefault(); $(this).parent('div').remove(); x--;
+			})
+		});
+	</script>
+</body>
+
+</html>
