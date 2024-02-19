@@ -859,6 +859,11 @@ pre {
   margin-right: -100px; */
   /* float: right; */
 }
+@media (max-width: 991.98px) {
+  #remove_field {
+    padding-top: 0px;
+  }
+}
 
 /* #contact_ok{
   margin-left: 40%;
