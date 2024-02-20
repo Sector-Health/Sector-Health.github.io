@@ -855,18 +855,22 @@ pre {
   /* width: 25%; */
   text-align: center;
   padding-top: 15px;
-  /* margin-top: -55px;
-  margin-right: -100px; */
   /* float: right; */
 }
 @media (max-width: 991.98px) {
-  #remove_field {
+  .remove_field {
     padding-top: 0px;
+    padding-bottom: 15px;
   }
 }
-
-/* #contact_ok{
-  margin-left: 40%;
+/* @media (max-width: 991.98px) {
+  .container{
+      padding: 0;
+      padding-bottom: 50;
+      margin-top: -30px;
+      margin-bottom: 30px;
+      overflow-x: hidden;
+  }
 } */
 
 #contact_box {
