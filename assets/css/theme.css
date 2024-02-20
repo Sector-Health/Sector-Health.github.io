@@ -857,7 +857,7 @@ pre {
   padding-top: 15px;
   /* float: right; */
 }
-@media (max-width: 991.98px) {
+@media (max-width: 575px) {
   .remove_field {
     padding-top: 0px;
     padding-bottom: 15px;
